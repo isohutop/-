@@ -1,0 +1,3 @@
+page{width: 86%;margin-left: 7%;}
+.p{font-size: 4.3vw;color: #1d1d1f;margin-top: 5vw;font-weight: bold}
+.q{font-size: 3.9vw;color: #86868f;padding:2.8vw 0}

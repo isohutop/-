@@ -1,0 +1,22 @@
+{
+  "desc": "连山阁工具集：周公解梦，成语典故，古谚语，顺口溜，歇后语，绕口令，藏头诗，赞颂伴侣，舔狗日志，土味情话，分手语录，朋友圈文案，垃圾分类，早安心语，晚安心语，生活小窍门，地理杂志，中药大全，营养成分表，菜谱百科，姓氏起源，历史的今天。",
+  "rules": [{
+    "action": "allow",
+    "page": "o/o/a",
+    "params": ["o"],
+    "matching": "inclusive"
+  },{
+    "action": "allow",
+    "page": "o/o/b",
+    "params": ["o"],
+    "matching": "inclusive"
+  },{
+    "action": "allow",
+    "page": "o/o/c",
+    "params": ["o"],
+    "matching": "inclusive"
+  },{
+  "action": "allow",
+  "page": "*"
+  }]
+}

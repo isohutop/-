@@ -1,0 +1,90 @@
+<view style="padding-top:25vw">
+<!-- 解梦 地理  -->
+<view data-i="{{index}}" wx:for="{{m}}" wx:key="index" class="m {{m?'':'v'}}">
+<view class="p">{{o==513?item.title:''}}{{o==507?item.name:''}}</view>
+<view class="q"><rich-text nodes="<div>{{o==513?item.result:''}}{{o==507?item.content:''}}</div>"></rich-text></view>
+</view>
+<!-- 菜谱  -->
+<view data-i="{{index}}" wx:for="{{r}}" wx:key="index" class="m {{r?'':'v'}}">
+<view class="{{o==510?'':'v'}}">
+<view class="p">{{item.cp_name}}</view>
+<view class="q">
+<view class="rq"><text class="l">食材</text>：{{item.yuanliao}}</view>
+<view class="rq {{item.tiaoliao?'':'v'}}"><text class="l">调料</text>：{{item.tiaoliao}}</view>
+<view class="rq {{item.texing?'':'v'}}"><text class="l">推荐理由</text>：{{item.texing}}</view>
+<view class="rq"><text class="l">作法</text>：{{item.zuofa}}</view>
+<view class="rq {{item.tishi?'':'v'}}"><text class="l">提示</text>：{{item.tishi}}</view>
+</view></view>
+
+<view class="{{o==503?'':'v'}}"><!-- 垃圾  -->
+<view class="p">{{item.name}}</view>
+<view class="q">
+<view class="rq"><text class="l">分类</text>：{{item.type}}</view>
+<view class="rq"><text class="l">分类解释</text>：{{item.explain}}</view>
+<view class="rq"><text class="l">包含类型</text>：{{item.contain}}</view>
+<view class="rq"><text class="l">投放提示</text>：{{item.tip}}</view>
+
+</view></view>
+
+</view><!-- 菜谱  -->
+
+
+<!-- 营养表  -->
+<view class="m {{b?'':'v'}}">
+<view class="p">{{b.name}}</view>
+<view class="q">
+<view class="rq {{b.rl?'':'v'}}"><view class="r">热量(大卡)</view>：{{b.rl}}</view>
+<view class="rq {{b.las?'':'v'}}"><view class="r">硫胺素</view>：{{b.las}}</view>
+<view class="rq {{b.gai?'':'v'}}"><view class="r">钙(毫克)</view>：{{b.gai}}</view>
+<view class="rq {{b.dbz?'':'v'}}"><view class="r">蛋白质</view>：{{b.dbz}}</view>
+<view class="rq {{b.su?'':'v'}}"><view class="r">核黄素</view>：{{b.su}}</view>
+<view class="rq {{b.mei?'':'v'}}"><view class="r">镁</view>：{{b.mei}}</view>
+<view class="rq {{b.zf?'':'v'}}"><view class="r">脂肪</view>：{{b.zf}}</view>
+<view class="rq {{b.ys?'':'v'}}"><view class="r">烟酸</view>：{{b.ys}}</view>
+<view class="rq {{b.tei?'':'v'}}"><view class="r">铁</view>：{{b.tei}}</view>
+<view class="rq {{b.shhf?'':'v'}}"><view class="r">碳水化合物</view>：{{b.shhf}}</view>
+<view class="rq {{b.wsfc?'':'v'}}"><view class="r">维生素C</view>：{{b.wsfc}}</view>
+<view class="rq {{b.meng?'':'v'}}"><view class="r">锰</view>：{{b.meng}}</view>
+<view class="rq {{b.ssxw?'':'v'}}"><view class="r">膳食纤维</view>：{{b.ssxw}}</view>
+<view class="rq {{b.wsse?'':'v'}}"><view class="r">维生素E</view>：{{b.wsse}}</view>
+<view class="rq {{b.xin?'':'v'}}"><view class="r">锌</view>：{{b.xin}}</view>
+<view class="rq {{b.wssa?'':'v'}}"><view class="r">维生素A</view>：{{b.wssa}}</view>
+<view class="rq {{b.dgc?'':'v'}}"><view class="r">胆固醇</view>：{{b.dgc}}</view>
+<view class="rq {{b.tong?'':'v'}}"><view class="r">铜</view>：{{b.tong}}</view>
+<view class="rq {{b.lb?'':'v'}}"><view class="r">胡罗卜素</view>：{{b.lb}}</view>
+<view class="rq {{b.jia?'':'v'}}"><view class="r">钾</view>：{{b.jia}}</view>
+<view class="rq {{b.ling?'':'v'}}"><view class="r">磷</view>：{{b.ling}}</view>
+<view class="rq {{b.shc?'':'v'}}"><view class="r">视黄醇当量</view>：{{b.shc}}</view>
+<view class="rq {{b.la?'':'v'}}"><view class="r">钠</view>：{{b.la}}</view>
+<view class="rq {{b.xi?'':'v'}}"><view class="r">硒</view>：{{b.xi}}</view>
+<view class="rq {{b.type?'':'v'}}"><view class="r">食品种类</view>：{{b.type}}</view>
+</view>
+</view>
+
+<!-- 508 601  -->
+<view class="m {{x?'':'v'}}">
+<view class="p">{{o==508?x.title:''}}{{o==601?x.xing:''}}</view>
+<view class="q"><rich-text nodes="<div>{{x.content}}</div>"></rich-text></view>
+</view>
+
+<!-- 515 405  -->
+<view class=" m {{y?'':'v'}}">
+<view class="p">{{o==515?y.cnresult:''}}{{o==405?y[0]:''}}</view>
+<view class="q">{{o==515?y.enresult:''}}{{o==405?y[1]:''}}</view>
+<view class="sj" catchtap="l">点击复制</view>
+</view>
+<!--  成语典故309  -->
+<view class=" m {{z?'':'v'}}">
+<view class="p">{{o==309?z.chengyu:''}}</view>
+
+
+<view class="q {{o==309?'':'v'}}">
+<view class="rq"><text class="l">拼音</text>：{{z.pinyin}}</view>
+<view class="rq"><text class="l">释义</text>：{{z.diangu}}</view>
+<view class="rq"><text class="l">出处</text>：{{z.chuchu}}</view>
+</view>
+
+</view>
+
+<view style="height:19vw;width:100%"></view>
+</view>

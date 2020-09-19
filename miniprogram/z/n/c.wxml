@@ -1,0 +1,29 @@
+
+<view class="nc" wx:for="{{q}}" wx:key="d">
+<view class="p">
+<view class="l yh"></view>
+<view class="m fz" data-i="{{item.d}}" catchtap="f"></view>
+</view><!--上层-->
+
+<view class="q" style="padding-bottom:16vw">
+
+<!--猜字谜-->
+<view wx:if="{{o==701||o==702|o==703}}">
+<view class="m">{{o==701?item.content:o==702?item.riddle:item.question}}<view class="r" style="color:#f8d27f">{{o==702?item.type:o==703?'打一成语':''}}</view></view>
+<input class="n" data-d="{{item.d}}" bindinput="d" placeholder="{{item.n}}" bindfocus="a" bindblur="b" bindconfirm="c" />
+
+<view wx:if="{{item.f}}" class="font-size:3.9vw">
+<view style="font-size:3.4vw;margin-top: 2vw;color:#{{item.f>1?'3e1393':'fc546a'}}">{{item.f>1?'回答正确':'回答错误'}}</view>
+<view class="b">谜底解释 : {{item.answer}}</view>
+<rich-text nodes="{{o==701?item.reason:o==702?item.description:item.source}}"></rich-text>
+</view>
+
+</view>
+
+
+
+
+
+</view>
+
+</view>

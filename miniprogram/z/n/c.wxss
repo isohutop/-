@@ -1,0 +1,2 @@
+@import "./a.wxss";
+.n{line-height: 5;border-bottom: 1px dashed #666;font-size: 3.4vw}

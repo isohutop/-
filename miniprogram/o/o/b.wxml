@@ -1,0 +1,19 @@
+<oc v="{{v}}" b="{{b}}" />
+<oa s="{{s}}" b="{{b}}" u="{{u}}" w="{{n?w:[]}}" catche="e" catchf="f" />
+<ob b="{{b}}" g="{{x}}" h="{{y}}" w="{{w}}" wx:if="{{!t}}" />
+<nb o="{{s.a}}" n="{{m}}" a="{{a}}" wx:if="{{m}}" />
+
+<view style="padding-top:25vw" wx:else>
+  <view class="ox" wx:if="{{n}}"><view class="oy">{{s.b}}</view></view>
+<view wx:else style="{{w[1]?'background:url('+w[1]+');background-size:cover':''}}" class="ox {{w[1]?'':'lt'}}"></view>
+<view class="oz">{{n?s.d:w[0]}}</view>
+
+  <view class="fc {{p?'fb':''}}">
+    <view class="l" style="width:{{p?24:34}}px;height:{{p?24:34}}px;margin:{{p?9:4}}px;"></view>
+    <input class="m" confirm-type="search" bindinput="d" placeholder="{{q}}" bindfocus="a" bindblur="b" bindconfirm="c" adjust-position="false" />
+    <view class="r yy {{!p?'u':'v'}}" catchtouchstart="g" data-conf="{{button}}" catchtouchend="h"></view>
+  </view> 
+
+</view> 
+
+<view class="tp {{m?'u':'v'}}" catchtap="t"></view>

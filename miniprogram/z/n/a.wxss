@@ -1,0 +1,15 @@
+.nc{color:#767678;width: 86vw;margin-left: 7vw;min-height: 50vw;background:#fefefe;border-radius: 2%;margin-top: 10vw;box-shadow: 2px 2px 7px #c4c4c1}
+
+.p{display: flex;margin:0 4vw 1vw;justify-content:space-between;align-items:flex-end;height:13vw; }
+.p .l,.p .m{width:9vw;height:9vw}
+.p .m{margin:0 1vw}  
+/*.p .r{width: 19vw;margin-bottom: .8vw;line-height: 5.8vw;border-radius: 4vw;text-align:center;color:#a0a1a3;font-size: 3.1vw;border: 1px solid#d5d5d5}*/
+ 
+.q{padding:0 8vw 6vw;line-height:8.6vw;font-size:4.3vw;text-align:left}
+.q .l{font-size: 3.1vw;width: 94%;text-align: right}
+.q .r{font-size:3.1vw}
+.q .m{font-weight:bold;padding:2vw 2vw 2vw 0}
+.nc .w{position: absolute;margin-top: 14vw;color: #fafafa;font-size: 28vw;font-style:italic;width: 76%;text-align: right;font-weight: bolder}
+.nc:nth-of-type(1) .w{color:#f7f7f7}
+.nc:nth-of-type(2) .w{color:#f8f8f8}
+.nc:nth-of-type(3) .w{color:#f9f9f9}

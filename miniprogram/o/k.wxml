@@ -1,0 +1,11 @@
+<view wx:if="{{o==1}}">
+<view wx:for="{{p}}" wx:key="index">
+<view class="p">{{item.p}}</view>
+<view class="q" wx:for="{{item.q}}" wx:key="index">{{item}}</view>
+</view>
+<button open-type="feedback" style="width:100%;line-height:13vw;background:#4ec868;position:fixed;bottom:0;left:0;color:#fff">建议反馈</button>
+</view>
+
+<view wx:if="{{o==2}}">
+
+</view>

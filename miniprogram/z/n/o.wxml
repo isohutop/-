@@ -1,0 +1,6 @@
+<view style="padding:25vw 0 28vw">
+<view data-i="{{index}}" wx:for="{{s}}" wx:key="index" class="e" wx:if="{{item.c}}">
+<view class="p" data-a="{{item.a}}" data-u="{{item.u}}" catchtap="p">{{item.b}}<view catchtap="q" data-a="{{item.a}}" style="position: absolute;width:4.9vw;height:4.9vw;right:10vw;margin-top:-5vw" class="z"></view></view>
+<view class="q" data-a="{{item.a}}" catchtap="p">{{item.d}}</view>
+</view>
+</view>

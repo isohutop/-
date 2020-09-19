@@ -1,0 +1,32 @@
+<view class="wh">
+ 
+  <view style="padding:{{p}}px 31vw 0 0;{{r}}">
+  <!--上层 wrap-->
+   <view class='p'>
+    <view class='l' style="line-height:{{h}}">{{w[0]?w[8]:s.b}}</view>
+
+    <view class='m' style="height:{{h}}">  <!-- 搜索框 -->  
+       
+    <input confirm-type="search" wx:if="{{b}}" class='l' bindinput="d" placeholder="{{q}}" bindfocus="a" bindblur="b" bindconfirm="c" />
+       
+    </view>
+   </view>
+   <!--下层 wrap-->
+   <view class='q'>
+   <view class='m'>
+   <view style="{{r}}" class="a">{{y==1154?s.b+' -- ':''}}{{w[0]?w[0]:s.d}}</view><!-- 引导语 -->
+   <view class="r" style="left:{{f}}px" wx:if="{{!w}}">
+   <view wx:if="{{s.e}}" catchtap="t" data-a="{{s.a}}">{{s.e}}</view>
+   <view wx:else class="{{!s.c?'':'v'}}">
+   <view wx:if="{{u[0]}}" data-a="{{s.a}}" catchtap="j">加入收藏</view>
+   <button wx:else open-type="getUserInfo" data-a="{{s.a}}" bindgetuserinfo="u">加入收藏</button>   
+   </view>
+   
+   </view>
+   </view>
+   </view>
+    
+  </view>
+</view>
+
+<ta t="{{t}}" catchy="y" />

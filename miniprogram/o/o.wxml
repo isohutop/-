@@ -1,0 +1,56 @@
+<oa n="{{u[0]}}" l="{{l}}" u="{{u[1]}}"  r="{{r}}" catchu="u" />
+
+
+<view wx:if="{{!l}}">
+<view style="position:fixed;margin-top:{{a}}px;font-size:4.3vw;width:25vw;height:calc(100vh - {{a}}px);border-right:1px solid #f5f5f5;text-align:center;box-shadow: 0 0 5px 0 rgba(222,222,222,0.5)">
+<view data-i="{{index}}" catchtap="m" wx:for="{{m}}" wx:key="index" class="y {{n==index?'c b':''}}">{{item}}</view>
+
+<view class="t b" catchtap="l">我的收藏</view>
+
+<view style="width:13vw;height:13vw;position:fixed;left:6vw;bottom:3vw" class="{{n?'n'+n:''}}"></view>
+</view>
+
+<view class="s" style="position: absolute;left:25vw;top:{{a}}px;margin-bottom:25vw" >
+
+<view>
+
+<view style="font-size:3.4vw;font-weight:lighter;padding:6.6vw 0 2vw 6.5vw;color:#666">{{f[n]}}
+<text wx:if="{{n==0}}" style="padding-left:5.5vw;color:#4CAF50" catchtap="q">详情</text>
+<text wx:if="{{n==2}}" style="padding-left:28vw;color:#4CAF50" catchtap="h">刷新</text>
+</view>
+
+<view wx:if="{{n==2}}">
+<view class="z x s" wx:for="{{j}}" wx:key="index" style="height:8.6vw">
+<view class="l">{{item.a}}</view>
+<view class="m">{{item.b}}</view>
+<view class="r">{{item.c}}</view>
+</view>
+</view>
+
+<view data-i="{{index}}" wx:for="{{s}}" wx:key="index" class="x k {{item.i[n]?'':'v'}}">
+<view class="s">
+<view data-a="{{item.a}}" data-u="{{item.u}}" data-i="{{item.k[0]}}" data-p="{{item.k[1]}}" catchtap="p" style="width:41vw;padding:2vw 0 0 3vw;font-weight:bolder">{{item.b}}</view>
+
+<view wx:if="{{item.c}}" class="r s"><text class="w">★</text><text style="line-height:3vw">已收藏</text></view>
+<view wx:else>
+<button class="r" wx:if="{{!u}}" open-type="getUserInfo" data-a="{{item.a}}" bindgetuserinfo="u"><text class="w">☆</text><text style="line-height:3vw">加收藏</text></button>
+<view wx:else class="r" data-a="{{item.a}}" catchtap="j"><text class="w">☆</text><text style="line-height:3vw">加收藏</text></view>
+</view>
+</view>
+
+<view class="q">{{item.d}}</view>
+
+</view>
+</view>
+
+</view>
+
+</view>
+
+<view wx:else>
+
+<nb n="{{s}}" catchr="r" wx:if="{{z[0]}}" />
+<view style="padding-top:35vw;font-size: 3.9vw;text-align: center;color: #939393" wx:else>{{u?'已登录，请点击小工具右侧的 ☆ 收藏工具！':'登录后，可将小工具收藏至此处。'}}</view>
+<view style="background: rgba(0,0,0, .14);position: fixed;right:1.3vw;bottom: 19vw;border-radius:50%">
+<view class="hm" style="margin:1.6vw;width:8.2vw;height:8.2vw" catchtap="l"></view></view>
+</view>

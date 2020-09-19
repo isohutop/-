@@ -1,0 +1,53 @@
+
+.cf,.w,.z{width:100%;height:100%}
+.w{background: #ffffff;color:#828282;position: fixed;z-index:99;text-align:center;padding-top:34vh;font-weight: bold;}
+.cr{position: relative;z-index:99;height: auto}
+.w .r{width: 19vw;height: 19vw;margin-left: 40vw}
+
+
+.z{background-color: #fff;z-index: 11;position: fixed;}
+.z,.atom, .core, .core::before, .core::after {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.x{position:absolute;z-index:2;width:44px;background: radial-gradient(circle at 25% 25%, #fff5d9 -75%, #fff8d9,  #923e00 75%);border-radius: 50%;
+  height: 44px;font-size: 11px;color: rgb(243, 252, 213);text-align: center}
+
+.atom {
+  width: 86px;
+  height: 86px;
+  transform-style: preserve-3d;
+}
+
+.core, .core::before, .core::after {
+  position: absolute;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  animation: 4s linear infinite;
+}
+.core {
+  width: 50%;
+  height: 50%;
+  animation-name: e;
+}
+.core::before, .core::after {
+  width: 200%;
+  height: 200%;
+  content: '';
+  border: 1px solid #921100;
+  box-shadow: 0 0 1px 1px #fff5d9, 0 0 1px 1px #fff5d9 inset;
+}
+.core:first-child {background:#5f3e00}
+.core:first-child::before{animation-name:a}
+.core:first-child::after{animation-name:b}
+.core:last-child {box-shadow: 0 0 75px 3px #fff5d9}
+.core:last-child::before{animation-name:c}
+.core:last-child::after{animation-name: d}
+
+@keyframes a {to{transform: rotate3d(-1, 0, 0, 360deg)}}
+@keyframes b {to{transform: rotate3d(0, 1, 0, 360deg)}}
+@keyframes e{to{transform: rotate3d(0, 0, 1, 360deg)}}
+@keyframes c{to{transform: rotate3d(1, -1, 0, 360deg)}}
+@keyframes d{to {transform: rotate3d(1, 1, 0, 360deg)}}

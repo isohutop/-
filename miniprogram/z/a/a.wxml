@@ -1,0 +1,57 @@
+<!--miniprogram/z/b/a.wxml-->
+<view class="wh">
+ 
+  <view style="padding:{{p}}px 31vw 0 0;width:{{w}}px">
+  <!--上层 wrap-->
+   <view class='p'>
+   
+    <view class='l' style="line-height:{{h}}" wx:if="{{l}}">   
+    
+    <button wx:if="{{u}}" style="width:{{v}}px;height:{{v}}px;background:url({{u}});background-size:cover;border-radius:50%"></button><!-- 用户头像 -->         
+    <button wx:else open-type="getUserInfo"  bindgetuserinfo="u" style="width:{{v}}px;height:{{v}}px;max-height:{{v}}px;border-radius: 50%;background: rgba(0,0,0, .14)"><!-- 登录 -->          
+          <image src="./2.png" style="width:{{v-8}}px;height:{{v-8}}px;margin:4px;border-radius:50%"></image>
+    </button> 
+
+    </view>    
+
+    <view class='m' style="height:{{h}}" wx:if="{{l}}">  <!-- 搜索框 -->  
+     <input confirm-type="search" wx:if="{{l>2}}" class='l' bindinput="d" placeholder="{{q}}" bindfocus="a" bindblur="b" bindconfirm="c" />
+     <view wx:else style="font-size:4.3vw;line-height:{{h}}">
+     <view class="a b" wx:if="{{n}}">{{n}}</view>
+     <button wx:else open-type="getUserInfo"  bindgetuserinfo="u" class="a b" style="text-align: left;margin-left:0!important;line-height:{{v-5}}px">点击登录</button>     
+     </view>
+    </view>
+    
+
+    <view wx:if="{{!l}}" style="line-height:{{h}};margin:4px 0 0 21px;font-weight:bolder;letter-spacing:2px">连山阁</view>
+
+   </view>
+   <!--下层 wrap-->
+
+   <view class='q'>
+
+   
+
+   <view wx:if="{{o&&l<2}}">
+   <view wx:if="{{l<1}}" class="m">   
+   <view style="{{r}}" class="a">为您打造高实用的小工具库</view><!-- 引导语 -->   
+   </view>
+
+   <view wx:else>
+   <view class='m' wx:if="{{o}}">{{r[6][0]}} {{r[6][1]}} {{r[6][2]}} · {{r[3]}}年{{r[4]}}{{r[5]}} {{r[6][5]}}</view>   
+   </view>
+   </view>
+
+   <view class='m' wx:else>
+   <view>点击右上角</view> 
+   <view class="l s"></view>
+   <view>添加到桌面，快速打开小工具</view> 
+   <view catchtap="x" class="r" style="left:{{f}}px">X</view>
+   </view><!--提示收藏 over-->
+
+   </view><!--下层 over-->
+
+    
+  </view>
+</view>
+

@@ -1,0 +1,17 @@
+<view class="cf {{v%2==0?'cr':''}}" wx:if="{{v}}">
+
+<view class="w" wx:if="{{v<5}}">
+<view class="{{v>2?'tj':'r lg'}}"></view>
+<view>{{v>2?'努力查询中...':'归藏易文化'}}</view>
+</view>
+
+<view class="z" wx:if="{{v==5}}">
+<view class="x"><view style="margin-top:14px">连山阁</view></view>
+<view class="atom">
+  <view class="core"></view>
+  <view class="core"></view>
+</view>
+</view>
+
+
+</view>

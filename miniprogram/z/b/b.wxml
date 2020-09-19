@@ -1,0 +1,17 @@
+<view class="wv">
+  <!-- 选中的时候往p加class:r -->
+<view catchtap="{{n[4]?'n':'m'}}">
+ <view class="m {{n[4]?'':'lg'}}" style="{{n[4]?'background:url('+n[4]+');background-size:cover':''}}"></view> 
+ <view style="margin-left:17vw">
+ <view class="p">{{n[2]}}</view>
+ <view class="q">{{n[3]}}</view>
+ </view>
+</view>
+
+<view class="r">
+ <view class="l" wx:if="{{b}}">
+ <view class="l yy" catchtouchstart="g" data-conf="{{m}}" catchtouchend="h"></view>
+ </view>
+<view class="r" catchtap="{{n[4]?'w':'r'}}">{{n[4]?'进主页':e?'返回':'连山阁'}}</view>
+</view>
+</view>

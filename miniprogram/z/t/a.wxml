@@ -1,0 +1,30 @@
+<view class="nb {{ t ? 's' : 'v'}}">
+<!--头部-->
+<view class="p">
+<view class="l"></view>
+<view class="m">{{z}}</view>
+
+<view class="r" bindtap="y">
+<view class="x">返回</view>
+</view> 
+
+</view><!--头部-->
+
+<view class="w" style="width:100%">
+
+<!--内容-->
+<view class="n">
+<view data-i="{{index}}" wx:for="{{n}}" wx:key="index" class="m">
+<view style="position:absolute;left:8vw;width:6vw;height:6vw" class="lg"></view>
+{{item}}
+</view>
+</view>
+<!--内容--->
+
+</view>
+
+<view class="q"><view class="ba" catchtap="y">朕已阅</view></view>
+
+</view>
+
+<view class="mb {{ t ? 's' : 'v'}}" bindtap="y"></view>

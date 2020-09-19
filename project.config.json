@@ -1,0 +1,114 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": true,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "appid": "修改为您的小程序appid",
+  "projectname": "%E8%BF%9E%E5%B1%B1%E9%98%81",
+  "libVersion": "2.12.2",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": 1,
+          "name": "o/k",
+          "pathName": "o/k",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "o/o/b",
+          "pathName": "o/o/b",
+          "query": "o=513&b=isohu",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "o/o/a",
+          "pathName": "o/o/a",
+          "query": "o=307",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "o/i/i",
+          "pathName": "o/i/i",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "o/o/c",
+          "pathName": "o/o/c",
+          "query": "o=701&b=isohu",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "t/t",
+          "pathName": "t/t",
+          "query": "o=307",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

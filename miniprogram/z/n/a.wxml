@@ -1,0 +1,52 @@
+<view class="nc" wx:for="{{p}}" wx:key="a">
+<view wx:if="{{t}}" class="w">{{index+1}}</view>
+<view class="p">
+<view class="l yh"></view>
+<view class="m fz" data-i="{{index}}" catchtap="f"></view>
+</view>
+<view class="q"><rich-text nodes="{{item}}"></rich-text></view>
+</view><!--P传参-->
+
+
+<view class="nc" wx:for="{{q}}" wx:key="a">
+<view class="p">
+<view class="l yh"></view>
+<view class="m fz" data-i="{{index}}" catchtap="f"></view>
+<!--<view class="r" data-i="{{index}}" catchtap="f">复制</view>-->
+</view>
+
+<view class="q">
+<!--历史的今天-->
+<view wx:if="{{o==603}}">
+<view>{{item.lsdate}} -</view>
+{{item.title}}
+</view>
+
+<!--唐诗 宋词 神回复 十万-->
+<view wx:if="{{o==301||o==302||o==105||o==516}}">
+<view class="m">{{item.title}}</view>
+<view class="r" wx:if="{{o!=105}}">{{o==516?'':'作者：'}}{{item.author}}</view>
+<view><rich-text nodes="{{o==105?'神回复：'+item.content:item.content}}"></rich-text></view>
+</view>
+
+<!--名言-->
+<view wx:if="{{o==308}}">
+<view class="m" style="margin-top:3vw">{{item.content}}</view>
+<view class="r" style="margin-top:1vw;text-align:right;font-size:0.8em">--- {{item.mrname}}</view>
+</view>
+
+<!--台词-->
+<view wx:if="{{o==307}}">
+{{item.dialogue}}
+<view class="l">《{{item.source}}》</view>
+</view>
+
+<!--古籍名句-->
+<view wx:if="{{o==310||o==406||o==104}}">
+{{item.content}}
+<view class="l">{{o==104?'--- ' +item.source:'《'+item.source+'》'}}{{item.author?' · '+item.author:''}}</view>
+</view>
+
+</view>
+
+</view>

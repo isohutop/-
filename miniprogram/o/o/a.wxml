@@ -1,0 +1,16 @@
+<oa s="{{s}}" u="{{u}}" w="{{n?w:[]}}" /><ob w="{{w}}" wx:if="{{!r}}"  />
+<view style="padding:14vw 0 25vw">
+
+<view class="ox" wx:if="{{n}}"><view class="oy">{{s.b}}</view></view>
+<view wx:else style="{{w[1]?'background:url('+w[1]+');background-size:cover':''}}" class="ox {{w[1]?'':'lt'}}"></view>
+
+<view class="x {{x?'y':''}}"><view wx:for="{{i}}" wx:key="index">{{item}}</view></view>
+
+<nc o="{{s.a}}" p="{{p}}" q="{{q}}" t="{{!t}}" />
+
+<view wx:if="{{t}}" class="sx" catchtap="r" style="position: fixed;right:1.3vw;bottom: 19vw;width:13vw;height:13vw"></view>
+
+</view> 
+
+
+

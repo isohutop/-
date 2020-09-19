@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "o/o",
+    "o/k",
+    "o/o/a",
+    "o/o/b",
+    "o/o/c"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f5f5f5",
+    "navigationBarTitleText": "连山阁",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
